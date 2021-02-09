@@ -1,15 +1,17 @@
 import React, { Component } from "react";
 import Nav from "./Components/Nav/Nav";
 import "./App.css";
+//import routes file from routes assigned to routes variable
+import routes from './routes'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Nav />
-        <h1 style={{ padding: "200px 35%" }}>
-          This is where your pages will appear
-        </h1>
+        {/* insert and render routes needs to be in curly brackets
+        since it is a variable and not a component*/}
+        {routes}
       </div>
     );
   }
